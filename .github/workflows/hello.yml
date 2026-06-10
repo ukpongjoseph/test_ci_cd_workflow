@@ -2,7 +2,7 @@ name : My Test
 
 on : 
   push :
-    branch :
+    branches :
      - main
 
 jobs :
