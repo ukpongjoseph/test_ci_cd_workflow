@@ -18,5 +18,11 @@ jobs :
       - name : date_printer
         run : | 
           date
+  display_list :
+    runs-on : ubuntu-latest
+    steps :
+      - name : display_list_lenght
+        run : |
+          ls -l
 
       
