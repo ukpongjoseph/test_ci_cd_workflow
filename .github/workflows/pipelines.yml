@@ -1,0 +1,20 @@
+name : Deployment pipeline
+
+on :
+  push :
+    branches :
+      - main
+
+jobs :
+  setup_env : 
+  runs-on : ubuntu-latest
+  steps :
+    - uses : actions/checkout@v6
+    - uses : actions/setup-node
+      with : 
+        node-version : '24
+    - name : install dependencies
+      run : npm install
+    - name : eslinting
+      run : npm run eslint
+  
