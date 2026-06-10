@@ -12,3 +12,9 @@ jobs :
       - name : init step
         run : |
           echo "Hello world"
+  introduce_author_job :
+    runs-on : ubuntu-latest
+    steps :
+      - name : introduce
+        run : |
+          echo "Author is Joseph Aniekan" 
