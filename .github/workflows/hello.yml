@@ -1,20 +1,13 @@
-name : Hello workflow
+name : My Test
 
 on : 
   push :
-    branches :
-      - main
+    branch :
+     - main
 
 jobs :
-  Hello_world_job : 
+  First_trial_test :
     runs-on : ubuntu-latest
     steps :
-      - name : init step
-        run : |
-          echo "Hello world"
-  introduce_author_job :
-    runs-on : ubuntu-latest
-    steps :
-      - name : introduce
-        run : |
-          echo "Author is Joseph Aniekan" 
+      run : |
+        echo "I made it"
