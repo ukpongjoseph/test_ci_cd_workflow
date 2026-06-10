@@ -9,4 +9,7 @@ jobs :
   First_trial_test :
     runs-on : ubuntu-latest
     steps :
-      run : echo "I made it"
+      - name : my_job_id
+      - run : echo "I made it"
+
+      
