@@ -5,7 +5,7 @@ on :
     branches :
       - main
 
-job :
+jobs :
   Hello world job : 
     runs-on : ubuntu-latest
     steps :
