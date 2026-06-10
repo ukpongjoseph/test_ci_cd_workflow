@@ -1,0 +1,14 @@
+name : Hello workflow
+
+on : 
+  push :
+    branches :
+      - main
+
+job :
+  Hello world job : 
+    runs-on : ubuntu-latest
+    steps :
+      - name : init step
+        run : |
+          echo "Hello world"
