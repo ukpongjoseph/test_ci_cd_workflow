@@ -10,11 +10,13 @@ jobs :
     runs-on : ubuntu-latest
     steps :
       - name : my_job_id
-        run : echo "I made it"
+        run : | 
+          echo "I made it"
   Print_date :
     runs-on : ubuntu-latest
     steps :
       - name : date_printer
-        run : date
+        run : | 
+          date
 
       
