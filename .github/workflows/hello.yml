@@ -10,6 +10,6 @@ jobs :
     runs-on : ubuntu-latest
     steps :
       - name : my_job_id
-      - run : echo "I made it"
+        run : echo "I made it"
 
       
