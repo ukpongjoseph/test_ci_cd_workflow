@@ -9,5 +9,4 @@ jobs :
   First_trial_test :
     runs-on : ubuntu-latest
     steps :
-      run : |
-        echo "I made it"
+      run : echo "I made it"
