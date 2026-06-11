@@ -1,7 +1,7 @@
 /* eslint-env node */
-/* global global */
+/ eslint-disable no-redeclare */
 
 const { TextEncoder, TextDecoder } = require('util')
 
 global.TextEncoder = TextEncoder
-// global.TextDecoder = TextDecoder
+global.TextDecoder = TextDecoder
