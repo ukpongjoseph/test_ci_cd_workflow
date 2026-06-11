@@ -20,7 +20,8 @@ module.exports = [
       ecmaVersion: 2018,
       sourceType: 'commonjs',
       globals: {
-        ...globals.node
+        ...globals.node,
+        ...globals.jest,
       }
     },
     rules: {
@@ -76,6 +77,18 @@ module.exports = [
       'arrow-spacing': ['error', { 'before': true, 'after': true }],
       'no-console': 'off',
       'react/prop-types': 0
+    }
+  },
+  {
+    files: ["jest.setup.js"],
+    languageOptions: {
+      globals: {
+        global: "readonly" // allow 'global'
+      },
+      env: {
+        node: true,      // allow 'require'
+        jest: true       // allow Jest globals if used here
+      }
     }
   }
 ]
