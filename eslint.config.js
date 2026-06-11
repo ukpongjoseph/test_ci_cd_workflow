@@ -15,7 +15,7 @@ module.exports = [
   },
   js.configs.recommended,
   {
-    files: ['app.js'],
+    files: ['app.js','jest.setup.js'],
     languageOptions: {
       ecmaVersion: 2018,
       sourceType: 'commonjs',
@@ -78,17 +78,6 @@ module.exports = [
       'no-console': 'off',
       'react/prop-types': 0
     }
-  },
-  {
-    files: ["jest.setup.js"],
-    languageOptions: {
-      globals: {
-        global: "readonly" // allow 'global'
-      },
-      env: {
-        node: true,      // allow 'require'
-        jest: true       // allow Jest globals if used here
-      }
-    }
   }
+
 ]
