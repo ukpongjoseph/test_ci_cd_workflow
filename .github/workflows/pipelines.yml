@@ -20,4 +20,8 @@ jobs :
         run : npm install
       - name : eslinting
         run : npm run eslint
+      - name : building steps
+        run : npm run build
+      - name : testing stage
+        run : npm run test
     
